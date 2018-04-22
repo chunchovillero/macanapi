@@ -18,4 +18,6 @@ class Pedido extends Model
 	public function estado() {
 		return $this->belongsTo('App\Estado', 'estado_idestado', 'idestado' );
 	}
+
+	public $timestamps = false;
 }
